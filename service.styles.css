@@ -1,5 +1,8 @@
 html {
-  --font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: #262626;
+  max-width: 1920px;
+  box-sizing: border-box;
  }
 
 #header{
@@ -10,7 +13,7 @@ html {
   align-items: center;
  }
 
-.header__inside{
+ .header__inside{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -23,13 +26,13 @@ html {
   box-sizing: border-box;
   }
 
-.logo{
+ .logo{
   height: 48px;
   width: 179.96893310546875px;
   margin-top: 10px;
  }
 
-#logo {
+ #logo {
   color: #fafafa;
   font-weight: 700;
   font-size: 26px;
@@ -114,7 +117,7 @@ h1{
   margin-top: 42.5px;
   }
 
-#button{
+#button_heading{
   height: 51.686744689941406px;
   width: 242.92857360839844px;
   border-radius: 10px;
@@ -131,17 +134,91 @@ h1{
   box-sizing: border-box;
 }
   
-#button:hover{
+#button_heading:hover{
  border-color: #0369a1;
  background-color: #0369a1;
  color: white;
 }
 
-#button:active{
+#button_heading:active{
   border-color: #0c4a6e;
   background-color: #0c4a6e;
   color: white;
  }
+
+.services_block{
+  margin-top: 116px;
+  margin-bottom: 181px;
+  box-sizing: border-box;
+  }
+
+.services_block_heading{
+  margin-bottom: 33px;
+  margin-left: 370px;
+  margin-right: 370px;
+  box-sizing: border-box;
+}
+
+.services_block_inside{
+  display: flex;
+  flex-direction: column;
+  height: 641px;
+  box-sizing: border-box;
+}
+
+h2{
+  font-size: 48px;
+  font-weight: 700;
+  text-align: left;
+  color:#0369A1;
+  font-family:'Open Sans', sans-serif;
+}
+
+.services_block_content{
+  display: flex;
+  flex-direction: row;
+  margin-left: 370px;
+  margin-right: 370px;
+  box-sizing: border-box;
+}
+
+
+.services_block_content_1{
+  height: 308px;
+  width: 675px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family:'Open Sans', sans-serif;
+  color: #0B4269;
+  display: flex;
+  box-sizing: border-box;
+ }
+
+.services_block_content_2{
+  height: 308px;
+  width: 675px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family:'Open Sans', sans-serif;
+  color: #0B4269;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.services_block_picture{
+  height: 641px;
+  width: 480px;
+  border: solid none;
+  border-radius: 20px;
+  margin-left: 25px;
+  background-image: url(patient.png);
+  box-sizing: border-box;
+}
+ 
+.prices_block_heading{
+  margin-left: 559px;
+  margin-right: 556px;
+}
 
 h3{
   font-family: Open Sans;
@@ -150,7 +227,51 @@ h3{
   color: #0369A1;
 }
 
-.Our_services_block_heading{
+.prices_block_inside{
+  margin-top: 56px;
+}
+
+.prices_block_content_1{
+  margin-left: 417px;
+  margin-right: 442px;
+  margin-bottom: 12px;
+  width: 1080px;
+  height: 78px;
+  border: solid none;
+  border-radius: 30px;
+  background-color:#F0F9FF;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 56px;
+  display: flex;
+  align-items: center;
+  color: #075985;
+  box-sizing: border-box;
+}
+
+.prices_block_content_2{
+  margin-left: 417px;
+  margin-right: 442px;
+  margin-bottom: 12px;
+  width: 1080px;
+  height: 78px;
+  border: solid none;
+  border-radius: 30px;
+  background-color:#E0F2FE;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 56px;
+  display: flex;
+  align-items: center;
+  color: #075985;
+  box-sizing: border-box;
+}
+
+.other_services_block_heading{
   margin-top: 137px;
   margin-left: 376px;
   margin-right: 366px;
@@ -160,7 +281,7 @@ h3{
   box-sizing: border-box;
 }
 
-.Our_services_block_inside{
+.other_services_block_inside{
   max-width: 1920px;
   height: 285px;
   background-color: #0284C7;
@@ -168,7 +289,7 @@ h3{
   display: flex;
 }
 
-.Our_services_block_content{
+.other_services_block_content{
   display: flex;
   flex-direction: row;
   margin-left: 395px;
@@ -179,7 +300,7 @@ h3{
   height: 183px;
 }
 
-.Our_services__icon{
+.other_services__icon{
   width: 35px;
   height: 85px;
   color: #E0F2FE;
@@ -188,7 +309,7 @@ h3{
   font-size: 100px;
 }
 
-.Our_services__image_1{
+.other_services__image_1{
   width: 277px;
   height: 183px;
   margin-left: 40.84px;
@@ -199,7 +320,7 @@ h3{
   border: solid none;
 } 
 
-.Our_services__image_2{
+.other_services__image_2{
   width: 277px;
   height: 183px;
   margin-right: 73px;
@@ -209,7 +330,7 @@ h3{
   border: solid none;
 }
 
-.Our_services__image_3{
+.other_services__image_3{
   width: 277px;
   height: 183px;
   margin-right: 41px;
@@ -219,7 +340,7 @@ h3{
   border: solid none;
 }
 
-.Our_services__image_number{
+.other_services__image_number{
   color: #F0F9FF;
   width: 36px;
   height: 36px;
@@ -232,12 +353,12 @@ h3{
   margin-top: 14px;
 }
 
-.Our_services__text_arrow{
+.other_services__text_arrow{
   display: flex;
   flex-direction: row;
 }
 
-.Our_services__image_text{
+.other_services__image_text{
   width: 155px;
   height: 44px;
   font-family: 'Open Sans';
@@ -260,159 +381,11 @@ h3{
   font-size: 50px;
 }
 
-#clinic_description{
-  height: 668px;
-  max-width: 1920px;
-  background-image: url(background-1.png);
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-.clinic_description_heading{
-  margin-top: 46px;
-  margin-left: 371px;
-  margin-right: 372px;
-  height: 57px;
-  width: 1177px;
-  font-family: 'Open Sans';
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  color: #0C4A6E;
-}
-
-.clinic_description_content{
-  height: 354px;
-  width: 1180px;
-  margin-left: 370px;
-  font-family: 'Open Sans';
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: justify;
-  color: #171717;
-  display: flex;
-  flex-direction: column;
-}
-
-.button_clinic_description{
-  margin-top: 46px;
-  margin-left: 1307px;
-}
-
-.reviews_heading{
-  margin-top: 129px;
-  margin-left: 803px;
-  margin-bottom: 83px;
-  height: 54px;
-  width: 322px;
-}
-
-.reviews_content{
-  height: 396px;
-  width: 1177px;
-  margin-left: 370px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.review_left{
-  height: 173px;
-  width: 580px;
-  box-sizing: border-box;
-  width: 580px;
-  height: 173px;
-  background: #FFFFFF;
-  border: 1px solid #E5E5E5;
-  border-radius: 20px;
-  margin-right: 10px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-}
-
-.review_right{
-  height: 173px;
-  width: 580px;
-  box-sizing: border-box;
-  width: 580px;
-  height: 173px;
-  background: #FFFFFF;
-  border: 1px solid #E5E5E5;
-  border-radius: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-}
-
-#client{
-  height: 106px;
-  width: 102.46540069580078px;
-  box-sizing: border-box;
-  margin-left: 25.89px;
-  margin-top: 34px;
-}
-
-.review_inside{
-  display: flex;
-  flex-direction: column;
-  margin-left: 11.94px;
-  margin-top: 18px;
-}
-
-.review_name{
-  height: 31px;
-  width: 157.18px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  color: #0284C7;
-}
-
-.review_text{
-  width: 421.8px;
-  height: 104px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  color: #737373;
-  margin-top: 9px;
-  margin-bottom: 11px;
-  margin-right: 17.91px;
-}
-
-.offices{
-  height: 507px;
-  max-width: 1920px;
-  background-image: linear-gradient(0deg, rgba(240, 249, 255, 0.8), rgba(240, 249, 255, 0.8)), url(map-background.png);
-  display: flex;
-  flex-direction: column;
-}
-
-.offices_heading{
-  width: 1175px;
-  height: 54px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  text-align: center;
-  margin-left: 370px;
-  margin-top: 55px;
-}
-
 .footer{
   margin-top: 213px;
   max-width: 1920px;
   height: 403px;
   background-color: #F0F9FF;
-  display: flex;
-  flex-direction: column;
 }
 
 .footer_line_1{
