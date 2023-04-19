@@ -24,11 +24,11 @@
 
             <nav>
             <div class="navigation">
-                <div class="navi"><a href="#>Услуги</a> </div>
-                <div class="navi"><a href="#>О нас</a></div>
-                <div class="navi"><a href="#r">Врачи</a></div>
-                <div class="navi"><a href="#r">Отзывы</a></div>
-                <div class="navi"><a href="#r">Отделения</a></div>
+                <div class="navi"><a href="#services_block">Услуги</a></div>
+                <div class="navi"><a href="#heading_block">О нас</a></div>
+                <div class="navi"><a href="#">Врачи</a></div>
+                <div class="navi"><a href="#reviews">Отзывы</a></div>
+                <div class="navi"><a href="#footer_adress">Отделения</a></div>
             </div>
             </nav>
       </div>
@@ -37,7 +37,7 @@
 
     <main>
       <section>
-        <div class="heading_block">
+        <div id="heading_block">
           <div class="heading_block__inside">
             <div class="Title">
               <h1>Стоматологическая клиника</h1>
@@ -49,13 +49,13 @@
             </div>
 
             <div class="button_heading">
-              <button id="button_heading">ЗАПИСАТЬСЯ</button>
+              <button id="button">ЗАПИСАТЬСЯ</button>
             </div>
           </div>
         </div>
 
 
-        <div class="services_block">
+        <div id="services_block">
             <div class="services_block_heading">
               <h2>ЛЕЧЕНИЕ КАРИЕСА</h2>
             </div>
@@ -141,55 +141,75 @@
 
     <footer>
       <div class="footer">       
-          <div class="footer_line_1">
-              <div class="footer_info">
-                <p>2002 «Dentо Plus» - семейная стоматологическая  клиника в Санкт-Петербурге.</p>
-              </div>
-
-              <div class="social_network">
-                <p>Мы в соц сетях</p>
-                <img id="image_footer" src="facebook-icon.png">
-              </div>
-          </div>
-
-          <div class="footer_line_2">
-            <div class="footer_adress">
-              <img id="image_footer" src="location-icon.png">
-              <h4>НАШИ АДРЕСА</h4>
-              <p>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3
-                Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1
-                Санкт-Петербург, 324372, ул.Галюшина, 28</p>
+        <div class="footer_line_1">
+            <div class="footer_info">
+              <p>2002 «Dentо Plus» - семейная стоматологическая  клиника в Санкт-Петербурге.</p>
             </div>
 
-            <div class="footer_phone">
-              <img id="image_footer" src="phone-icon.png">
-              <h4>НАШИ ТЕЛЕФОНЫ</h4>
-              <p>+7 (823) 555-357-31
-                +7 (823) 555-357-32
-                +7 (823) 555-357-33</p>
+            <div class="social_network">
+              <p>Мы в соц сетях</p>
+              <img id="image_footer" src="facebook-icon.png">
             </div>
-
-            <div class="footer_mail">
-              <img id="image_footer" src="email-icon.png">
-              <h4>НАША ПОЧТА</h4>
-              <p>DentoPlus@gmail.com</p>
-            </div>
-          </div>
-
-
-          <div class="footer_line_3">
-              <div class="licensy">
-                <p>Лицензия</p>
-              </div>
-  
-              <div class="confidential">
-                <p>Политика конфиденциальности</p>
-              </div>
-          </div>
-
         </div>
 
-    </footer>
+        <div class="footer_line_2">
+          <div class="footer_adress">
+            <div class="footer_adress_heading">
+                <img id="image_footer" src="location-icon.png">
+                <h4>НАШИ АДРЕСА:</h4>
+            </div>
+
+            <div class="footer_adress_content">
+              <ul>
+                <li>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3</li>
+                <li>Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1</li>
+                <li>Санкт-Петербург, 324372, ул.Галюшина, 28</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_phone">
+            <div class="footer_phone_heading">
+                <img id="image_footer" src="phone-icon.png">
+                <h4>НАШИ ТЕЛЕФОНЫ:</h4>
+            </div>
+
+            <div class="footer_phone_content">
+              <ul>
+                <li>+7 (823) 555-357-31</li>
+                <li>+7 (823) 555-357-32</li>
+                <li>+7 (823) 555-357-33</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_mail">
+             <div class="footer_mail_heading">
+                <img id="image_footer" src="email-icon.png">
+                <h4>НАША ПОЧТА:</h4>
+             </div>   
+             
+             <div class="footer_mail_content"> 
+                <p>DentoPlus@gmail.com</p>
+             </div>
+          </div>
+        </div>
+
+        <div class="footer_line_3">
+          <div class="license">
+            <p>Лицензия</p>
+          </div>
+
+          <div class="border"></div>
+
+          <div class="confidentiality">
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
+
+      </div>
+
+  </footer>
 
    </body>
 

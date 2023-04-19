@@ -28,7 +28,7 @@
                 <div class="navi"><a href="#clinic_description">О нас</a></div>
                 <div class="navi"><a href="#">Врачи</a></div>
                 <div class="navi"><a href="#reviews">Отзывы</a></div>
-                <div class="navi"><a href="#footer_adress">Отделения</a></div>
+                <div class="navi"><a href="#offices">Отделения</a></div>
             </div>
             </nav>
       </div>
@@ -37,7 +37,7 @@
 
     <main>
       <section>
-        <div class="heading_block">
+        <div id="heading_block">
           <div class="heading_block__inside">
             <div class="Title">
               <h1>Стоматологическая клиника</h1>
@@ -69,7 +69,7 @@
                 <div class="Our_services__image_1">
                   <p class="Our_services__image_number">02</p>
                   <div class="Our_services__text_arrow">
-                    <p class="Our_services__image_text">Лечение и рестоврация зубов</p>
+                    <p class="Our_services__image_text">Лечение и реставрация зубов</p>
                     <div class="arrow">
                       <i class="fa-solid fa-arrow-right"></i>
                     </div>
@@ -176,74 +176,91 @@
               </div>
             </div>
           </div>
+        </div>  
 
-          <div class="offices">
+          <div id="offices">
               <div class="offices_heading">
                 <h3>НАШИ ОТДЕЛЕНИЯ</h3>
               </div>
 
               <div class="offices_content">
-                  <div class="offices_box">
-                      <div class="offices_adress">
-
-                      </div>
-
-                      <div class="offices_working_mode">
-
-                      </div>
-
-                      <div class="offices_phone">
-
-                      </div>
-
-                  </div>
-
-              </div>
-
-              <div class="offices_content">
                 <div class="offices_box">
-                    <div class="offices_adress">
-
+                    <div class="offices_box_heading">
+                      <img id="location-icon" src="location-icon.png">
+                      <p>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3</p>
                     </div>
 
-                    <div class="offices_working_mode">
+                    <div class="offices_working">
+                      <img id="circle-info-icon" src="circle-info-icon.png">
+                      <div class="working_hours">
+                          <div class="working_hours_heading">
+                            <p>Режим работы:</p>
+                          </div>
 
+                          <div class="working_hours_text">
+                            <p> Пн-Вс с 8:00 до 18:00 без перерывов и выходных</p>
+                          </div>
+                      </div>
                     </div>
 
                     <div class="offices_phone">
-
+                      <p>+7 (823) 555-357-31</p>
+                    </div>
+                </div>
+              
+                <div class="offices_box">
+                    <div class="offices_box_heading">
+                      <img id="location-icon" src="location-icon.png">
+                      <p>Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1</p>
                     </div>
 
+                    <div class="offices_working">
+                      <img id="circle-info-icon" src="circle-info-icon.png">
+                      <div class="working_hours">
+                          <div class="working_hours_heading">
+                            <p>Режим работы:</p>
+                          </div>
+
+                          <div class="working_hours_text">
+                            <p> Пн-Вс с 8:00 до 18:00 без перерывов и выходных</p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="offices_phone">
+                      <p>+7 (823) 555-357-32</p>
+                    </div>
                 </div>
+             
+                <div class="offices_box">
+                    <div class="offices_box_heading">
+                      <img id="location-icon" src="location-icon.png">
+                      <p>Санкт-Петербург, 324372, ул.Галюшина, 28</p>
+                    </div>
 
-            </div>
+                    <div class="offices_working">
+                      <img id="circle-info-icon" src="circle-info-icon.png">
+                      <div class="working_hours">
+                          <div class="working_hours_heading">
+                            <p>Режим работы:</p>
+                          </div>
 
-            <div class="offices_content">
-              <div class="offices_box">
-                  <div class="offices_adress">
+                          <div class="working_hours_text">
+                            <p> Пн-Вс с 8:00 до 18:00 без перерывов и выходных</p>
+                          </div>
+                      </div>
+                    </div>
 
-                  </div>
-
-                  <div class="offices_working_mode">
-
-                  </div>
-
-                  <div class="offices_phone">
-
-                  </div>
-
+                    <div class="offices_phone">
+                      <p>+7 (823) 555-357-33</p>
+                    </div>
+                </div>
               </div>
-
-          </div>
-
-          </div>
-
-        </div> 
       </section>   
+</main>
 
-    </main>
 <footer>
-      <div class="footer">       
+        <div class="footer">       
           <div class="footer_line_1">
               <div class="footer_info">
                 <p>2002 «Dentо Plus» - семейная стоматологическая  клиника в Санкт-Петербурге.</p>
@@ -257,34 +274,55 @@
 
           <div class="footer_line_2">
             <div class="footer_adress">
-              <img id="image_footer" src="location-icon.png">
-              <h4>НАШИ АДРЕСА</h4>
-              <p>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3
-                Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1
-                Санкт-Петербург, 324372, ул.Галюшина, 28</p>
+              <div class="footer_adress_heading">
+                  <img id="image_footer" src="location-icon.png">
+                  <h4>НАШИ АДРЕСА:</h4>
+              </div>
+
+              <div class="footer_adress_content">
+                <ul>
+                  <li>Санкт-Петербург, 324372, ул. Ильюшина, 5, к. 3</li>
+                  <li>Санкт-Петербург, 324372, ул. Плюшина, 8, к. 1</li>
+                  <li>Санкт-Петербург, 324372, ул.Галюшина, 28</li>
+                </ul>
+              </div>
             </div>
 
             <div class="footer_phone">
-              <img id="image_footer" src="phone-icon.png">
-              <h4>НАШИ ТЕЛЕФОНЫ</h4>
-              <p>+7 (823) 555-357-31
-                +7 (823) 555-357-32
-                +7 (823) 555-357-33</p>
+              <div class="footer_phone_heading">
+                  <img id="image_footer" src="phone-icon.png">
+                  <h4>НАШИ ТЕЛЕФОНЫ:</h4>
+              </div>
+
+              <div class="footer_phone_content">
+                <ul>
+                  <li>+7 (823) 555-357-31</li>
+                  <li>+7 (823) 555-357-32</li>
+                  <li>+7 (823) 555-357-33</li>
+                </ul>
+              </div>
             </div>
 
             <div class="footer_mail">
-              <img id="image_footer" src="email-icon.png">
-              <h4>НАША ПОЧТА</h4>
-              <p>DentoPlus@gmail.com</p>
+               <div class="footer_mail_heading">
+                  <img id="image_footer" src="email-icon.png">
+                  <h4>НАША ПОЧТА:</h4>
+               </div>   
+               
+               <div class="footer_mail_content"> 
+                  <p>DentoPlus@gmail.com</p>
+               </div>
             </div>
           </div>
 
           <div class="footer_line_3">
-            <div class="licensy">
+            <div class="license">
               <p>Лицензия</p>
             </div>
 
-            <div class="confidential">
+            <div class="border"></div>
+
+            <div class="confidentiality">
               <p>Политика конфиденциальности</p>
             </div>
           </div>

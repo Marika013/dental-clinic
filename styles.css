@@ -1,6 +1,6 @@
 html {
   --font-family: 'Open Sans', sans-serif;
- }
+  }
 
 #header{
   max-width: 1920px;
@@ -60,8 +60,9 @@ a:hover{
   color: #0c4a6e;
  }
 
-.heading_block{
+#heading_block{
   display: flex;
+  flex-wrap: wrap;
   max-width: 1920px;
   height: 537px;
   background-image: url(hero.png);
@@ -72,6 +73,7 @@ a:hover{
 .heading_block__inside{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .Title{
@@ -144,7 +146,7 @@ h1{
  }
 
 h3{
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 40px;
   font-weight: 700;
   color: #0369A1;
@@ -166,11 +168,13 @@ h3{
   background-color: #0284C7;
   margin-top: 54px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Our_services_block_content{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 395px;
   margin-right: 394px;
   margin-top: 64px;
@@ -360,6 +364,7 @@ h3{
   flex-direction: column;
   margin-left: 11.94px;
   margin-top: 18px;
+ 
 }
 
 .review_name{
@@ -386,12 +391,13 @@ h3{
   margin-right: 17.91px;
 }
 
-.offices{
+#offices{
   height: 507px;
   max-width: 1920px;
   background-image: linear-gradient(0deg, rgba(240, 249, 255, 0.8), rgba(240, 249, 255, 0.8)), url(map-background.png);
   display: flex;
   flex-direction: column;
+ 
 }
 
 .offices_heading{
@@ -404,10 +410,102 @@ h3{
   text-align: center;
   margin-left: 370px;
   margin-top: 55px;
+  margin-bottom: 51px;
+}
+
+.offices_content{
+  Width: 1208px;
+  height:297px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 370px;
+  box-sizing: border-box;
+ 
+}
+
+.offices_box{
+  box-sizing: border-box;
+  width: 377px;
+  height: 297px;
+  background-color: #FFFFFF;
+  border: 1px solid #0284C7;
+  box-shadow: 0px 2px 4px rgba(115, 115, 115, 0.25);
+  border-radius: 25px;
+  margin-right: 23px;
+}
+
+.offices_box_heading{
+  display: flex;
+  flex-direction: row;
+  height: 64.46px;
+  margin-top: 32.86px;
+  margin-left: 10px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #075985;
+  line-height: 25px;
+ 
+}
+
+#location-icon{
+  height: 32.774539947509766px;
+  width: 26.928571701049805px;
+  margin-right: 5px;
+}
+
+.offices_working{
+  height: 135.23px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top: 16.43px;
+  margin-bottom: 3.79px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #075985;
+  line-height: 26px;
+ }
+
+.working_hours{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.working_hours_heading{
+  font-weight: 700;
+}
+
+#circle-info-icon{
+  height: 24.012765884399414px;
+  width: 25.582143783569336px;
+  margin-right: 5px;
+}
+
+.offices_working{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.offices_phone{
+  height: 34.12340545654297px;
+  width: 245.0500030517578px;
+  margin-left: 40px;
+  margin-bottom: 10.11px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 26px;
+  color: #075985;
 }
 
 .footer{
-  margin-top: 213px;
   max-width: 1920px;
   height: 403px;
   background-color: #F0F9FF;
@@ -423,6 +521,7 @@ h3{
   max-width: 1920px;
   display: flex;
   flex-direction: row;
+  
 }
 
 .footer_info{
@@ -432,7 +531,7 @@ h3{
   font-size: 18px;
   font-weight: 400;
   color: #075985;
-  margin-right: 547px;
+  margin-right: 546px;
   box-sizing: border-box;
 }
 
@@ -448,6 +547,7 @@ h3{
   font-size: 18px;
   line-height: 25px;
   color: #075985;
+
 }
 
 .footer_line_2{
@@ -461,25 +561,70 @@ h3{
 }
 
 .footer_adress{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  color: #075985;
   width: 503px;
   height: 128.22px;
-  margin-right: 98px;
+  margin-right: 97px;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer_phone{
+.footer_adress_heading{
+  display: flex;
+  flex-direction: row;
+}
+
+h4{
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 700;
+  color: #0369A1;
+  margin-left: 5px;
+}
+
+.footer_adress_content{
   width: 503px;
+  height: 128.22px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #075985;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0px;
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+
+.footer_phone{
+  width: 394px;
   height: 128.22px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   color: #075985;
-  margin-right: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_phone_heading{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_phone_content{
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #075985;
 }
 
 .footer_mail{
@@ -489,6 +634,22 @@ h3{
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  color: #075985;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_mail_heading{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.footer_mail_content{
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   color: #075985;
 }
 
@@ -501,7 +662,122 @@ h3{
   font-size: 17px;
   color: #075985;
   margin-top: 7px;
-  margin-left: 1176px;
+  margin-left: 1172px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
+  line-height: 23px;
+  justify-content: space-between;
+}
+
+.border{
+  margin-left: 12px;
+  margin-right: 6px;
+  border-right: #0369a1 solid 4px;
+  height: 22px;
+}
+
+@media (max-width: 600px)
+{
+
+#header {
+width: 100%;
+height: 100%;
+}
+
+#logo {
+width: 50%;
+height: 50%;
+font-weight: 400;
+font-size: 15px;
+}
+
+.navigation {
+display: flex;
+flex-direction: row;
+font-weight: 400;
+font-size: 15px;
+height: 50%;
+width: 100%;
+margin-top: 15px;
+justify-content: space-around;
+}
+
+#heading_block {
+  width: 100%;
+  height: 50%;
+}
+
+.heading_block__inside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.Title{
+  width: 100%;
+  margin-left: 0px;
+  padding-top: 37.95px;
+  height: 30%;
+  flex-direction: column;
+}
+
+h1{
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.dento_plus_blue {
+font-size: 26px;
+font-weight: 400;
+}
+
+.heading_block_content {
+  margin-left: 0px;
+  margin-top: 1.86px;
+  width: 50%;
+}
+
+.button_heading {
+  margin-left: 0px;
+}
+
+#button {
+  height: 100%;
+  width: 30%;
+  border-radius: 10px;
+  padding: 3px 3px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+.Our_services_block_heading {
+  margin: 0px;
+  height: 50%px;
+  width: 100%px;
+}
+
+.Our_services_block_inside {
+  width: 100%;
+  height: 50%;
+}
+
+.Our_services_block_content {
+  margin: 0;
+  flex-wrap: nowrap;
+  height: 50%;
+  width: 100%;
+}
+
+.Our_services__icon {
+  width: 100%;
+  height: 50%;}
+
+.clinic_description_heading {
+  margin: 0px;
+  height: 50%;
+  width: 100%;
+}
 }
